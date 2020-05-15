@@ -2,7 +2,7 @@
 const API_TOKEN = 'password12345';
 
 function addStudentFech( name, id ){
-    let url = 'http://localhost:8080/api/createStudent';
+    let url = '/api/createStudent';
 
     let data = {
         name : name,
@@ -37,7 +37,7 @@ function addStudentFech( name, id ){
 
 function fetchStudents(){
 
-    let url = 'http://localhost:8080/api/students';
+    let url = '/api/students';
     let settings = {
         method : 'GET',
         headers : {
